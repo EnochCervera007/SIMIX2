@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Favoritos - Tienda Fútbol</title>
+  <link rel="stylesheet" href="favoritos.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1> Favoritos</h1>
+  </header>
+
+  <main class="contenedor-favoritos">
+
+    <div class="card">
+      
+      <h2>Camiseta FC Barcelona</h2>
+      <p class="precio">89,99€</p>
+      <button>Eliminar</button>
+    </div>
+
+    <div class="card">
+      
+      <h2>Botas Nike Mercurial</h2>
+      <p class="precio">129,99€</p>
+      <button>Eliminar</button>
+    </div>
+
+    <div class="card">
+      
+      <h2>Balón Adidas Champions</h2>
+      <p class="precio">39,99€</p>
+      <button>Eliminar</button>
+    </div>
+
+  </main>
+
+</body>
+<script>
+  const botones = document.querySelectorAll(".card button");
+
+  botones.forEach(boton => {
+    boton.addEventListener("click", function(){
+      const card = this.parentElement;
+      card.style.opacity = "0";
+      card.style.transform = "scale(0.8)";
+
+      setTimeout(() => {
+        card.remove();
+      }, 300);
+    });
+  });
+</script>
+</html>

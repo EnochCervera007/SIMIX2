@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+    <button class="eliminar">✖</button>
+  </div>
+
+</main>
+
+<section class="resumen">
+  <h2>Total: <span id="total">219,98€</span></h2>
+  <button class="pagar">Finalizar compra</button>
+</section>
+
+<script>
+  const botonesEliminar = document.querySelectorAll(".eliminar");
+
+  botonesEliminar.forEach(btn => {
+    btn.addEventListener("click", function(){
+      const producto = this.parentElement;
+
+      producto.style.opacity = "0";
+      producto.style.transform = "translateX(100px)";
+
+      setTimeout(()=>{
+        producto.remove();
+      },300);
+    });
+  });
+
+  const botonesMas = document.querySelectorAll(".mas");
+  const botonesMenos = document.querySelectorAll(".menos");
+
+  botonesMas.forEach(btn => {
+    btn.addEventListener("click", function(){
+      const span = this.parentElement.querySelector("span");
+      span.textContent = Number(span.textContent) + 1;
+    });
+  });
+
+  botonesMenos.forEach(btn => {
+    btn.addEventListener("click", function(){
+      const span = this.parentElement.querySelector("span");
+      if(span.textContent > 1){
+        span.textContent = Number(span.textContent) - 1;
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

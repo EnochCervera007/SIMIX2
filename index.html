@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botas de Fútbol | Tienda Oficial</title>
+    <link rel="stylesheet" href="Index.css">
+
+    
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <a href="#" class="logo">
+                    <i class="fas fa-futbol"></i> SoccerPro
+                </a>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="¿Qué es lo que buscas?">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="user-actions">
+                    <a href="MiCuenta.html">
+                        <i class="fas fa-user"></i>
+                        <span>Mi cuenta</span>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-heart"></i>
+                        <span>Favoritos</span>
+                    </a>
+                    <a href="favoritos.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Carrito</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="header-bottom">
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Botas de Fútbol</a></li>
+                        <li><a href="#">Marcas</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Novedades</a></li>
+                        <li><a href="#">Guía de tallas</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Encuentra las <span>mejores botas</span> para tu juego</h1>
+                    <p>Descubre nuestra colección de botas de fútbol de las mejores marcas: Nike, Adidas, Puma y más. Rendimiento, estilo y tecnología en un solo lugar.</p>
+                    <a href="#" class="btn-cart" style="display: inline-flex; width: auto; padding: 12px 25px;">
+                        Ver colección <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <!-- Imagen representativa de botas de fútbol -->
+                    <div style="width: 100%; height: 300px; background-color: var(--dark-gray); border-radius: 10px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.4);">
+                        <div style="text-align: center; color: var(--light);">
+                            <i class="fas fa-futbol" style="font-size: 80px; color: var(--accent); margin-bottom: 20px;"></i>
+                            <h2 style="font-size: 24px; margin-bottom: 10px;">BOTAS DE FÚTBOL</h2>
+                            <p style="color: var(--gray);">Las mejores marcas al mejor precio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="filters">
+        <div class="container">
+            <h2><i class="fas fa-filter"></i> Filtra tu búsqueda</h2>
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="brand">Marca</label>
+                    <select id="brand">
+                        <option value="">Todas las marcas</option>
+                        <option value="nike">Nike</option>
+                        <option value="adidas">Adidas</option>
+                        <option value="puma">Puma</option>
+                        <option value="new-balance">New Balance</option>
+                        <option value="mizuno">Mizuno</option>
+                        <option value="Joma">Joma</option>
+        
+            
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="type">Tipo</label>
+                    <select id="type">
+                        <option value="">Todos los tipos</option>
+                        <option value="firm">Firmes (Tierra)</option>
+                        <option value="artificial">Artificial (Césped)</option>
+                        <option value="Futsal">Futsal</option>
+                        <option value="multiterrain">Multiterreno</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price">Precio</label>
+                    <select id="price">
+                        <option value="">Todos los precios</option>
+                        <option value="0-50">Menos de 50€</option>
+                        <option value="50-100">50€ - 100€</option>
+                        <option value="100-150">100€ - 150€</option>
+                        <option value="150+">Más de 150€</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="size">Talla</label>
+                    <select id="size">
+                        <option value="">Todas las tallas</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Botas Destacadas</h2>
+                <a href="#" class="view-all">
+                    Ver todas <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">Nuevo</div>
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-shoe-prints" style="font-size: 80px; color: var(--accent);"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Nike</div>
+                        <div class="product-name">Mercurial Vapor 15 Elite FG</div>
+                        <div class="product-price">
+                            <span class="current-price">279,99€</span>
+                            <span class="original-price">329,99€</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-cart">
+                                <i class="fas fa-shopping-cart"></i> Añadir
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">Oferta</div>
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-running" style="font-size: 80px; color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Adidas</div>
+                        <div class="product-name">Predator Accuracy.3 FG</div>
+                        <div class="product-price">
+                            <span class="current-price">89,99€</span>
+                            <span class="original-price">119,99€</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-cart">
+                                <i class="fas fa-shopping-cart"></i> Añadir
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-bolt" style="font-size: 80px; color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Puma</div>
+                        <div class="product-name">Ultra Ultimate FG/AG</div>
+                        <div class="product-price">
+                            <span class="current-price">219,99€</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-cart">
+                                <i class="fas fa-shopping-cart"></i> Añadir
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">Más vendido</div>
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-fire" style="font-size: 80px; color: #ff6b6b;"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">New Balance</div>
+                        <div class="product-name">Furon v7 Pro FG</div>
+                        <div class="product-price">
+                            <span class="current-price">199,99€</span>
+                            <span class="original-price">239,99€</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-cart">
+                                <i class="fas fa-shopping-cart"></i> Añadir
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="brands">
+        <div class="container">
+            <div class="section-header">
+                <h2>Marcas Destacadas</h2>
+                <a href="#" class="view-all">
+                    Ver todas <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <div class="brand-logo" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"white\"><text x=\"50%\" y=\"50%\" text-anchor=\"middle\" dy=\".3em\" font-size=\"24\" font-weight=\"bold\">NIKE</text></svg></div>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-logo" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"white\"><text x=\"50%\" y=\"50%\" text-anchor=\"middle\" dy=\".3em\" font-size=\"24\" font-weight=\"bold\">ADIDAS</text></svg></div>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-logo" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"white\"><text x=\"50%\" y=\"50%\" text-anchor=\"middle\" dy=\".3em\" font-size=\"24\" font-weight=\"bold\">PUMA</text></svg></div>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-logo" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"white\"><text x=\"50%\" y=\"50%\" text-anchor=\"middle\" dy=\".3em\" font-size=\"20\" font-weight=\"bold\">NEW BALANCE</text></svg></div>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-logo" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"white\"><text x=\"50%\" y=\"50%\" text-anchor=\"middle\" dy=\".3em\" font-size=\"24\" font-weight=\"bold\">MIZUNO</text></svg></div>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-logo" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"white\"><text x=\"50%\" y=\"50%\" text-anchor=\"middle\" dy=\".3em\" font-size=\"18\" font-weight=\"bold\">UNDER ARMOUR</text></svg></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>SoccerPro</h3>
+                    <p>Tu tienda especializada en botas de fútbol de las mejores marcas. Calidad, rendimiento y estilo para jugadores de todas las edadess.</p>
+                    <div class="newsletter">
+                        <p>Suscríbete a nuestro boletin informativo.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Tu correo electrónico">
+                            <button type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categorías</h3>
+                    <ul>
+                        <li><a href="#">Botas de fútbol</a></li>
+                        <li><a href="#">Botas para terreno firme</a></li>
+                        <li><a href="#">Botas para césped artificial</a></li>
+                        <li><a href="#">Botas Futsal</a></li>
+                        <li><a href="#">Botas para fútbol sala</a></li>
+                        <li><a href="#">Accesorios para botas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Ayuda</h3>
+                    <ul>
+                        <li><a href="#">Guía de tallas</a></li>
+                        <li><a href="#">Envíos y devoluciones</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Formas de pago</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Carrer de les Corts, 93</li>
+                        <li><i class="fas fa-phone"></i> +34 912 345 678</li>
+                        <li><i class="fas fa-envelope"></i> info@Soccerpro.com</li>
+                        <li><i class="fas fa-clock"></i> L-V: 9:00-20:30</li>
+                    </ul>
+                    <div style="margin-top: 20px;">
+                        <a href="#" style="margin-right: 15px; font-size: 20px;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="margin-right: 15px; font-size: 20px;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="margin-right: 15px; font-size: 20px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="font-size: 20px;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 SoccerPro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const addToCartButtons = document.querySelectorAll('.btn-cart');
+            const wishlistButtons = document.querySelectorAll('.btn-wishlist');
+            
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productName = this.closest('.product-card').querySelector('.product-name').textContent;
+                    alert(`¡${productName} añadido al carrito!`);
+                });
+            });
+            
+            wishlistButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productName = this.closest('.product-card').querySelector('.product-name').textContent;
+                    const icon = this.querySelector('i');
+                    
+                    if (icon.classList.contains('fas')) {
+                        icon.classList.remove('fas');
+                        icon.classList.add('far');
+                        alert(`¡${productName} eliminado de favoritos!`);
+                    } else {
+                        icon.classList.remove('far');
+                        icon.classList.add('fas');
+                        alert(`¡${productName} añadido a favoritos!`);
+                    }
+                });
+            });
+            
+            
+            const filterSelects = document.querySelectorAll('select');
+            filterSelects.forEach(select => {
+                select.addEventListener('change', function() {
+                    alert('Filtros aplicados. En una tienda real, esto actualizaría los productos mostrados.');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
